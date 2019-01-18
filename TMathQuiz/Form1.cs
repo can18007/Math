@@ -83,6 +83,7 @@ namespace TMathQuiz
             timeLeft = 30;
             timeLabel.Text = "30 seconds";
             timer1.Start();
+            timeLabel.BackColor = Color.Beige;
         }
 
         private bool CheckTheAnswer()
@@ -169,7 +170,11 @@ namespace TMathQuiz
                 // Display the new time left
                 // by updating the Time Left label.
                 timeLeft = timeLeft - 1;
-                if (timeLeft < 6) { timeLabel.BackColor = Color.Red; }
+                if (timeLeft < 6)
+                {
+                    timeLabel.BackColor = Color.Red;
+                }
+
                 timeLabel.Text = timeLeft + " seconds";
             }else
             {
