@@ -145,6 +145,7 @@
             this.difference.TabIndex = 3;
             this.difference.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.difference.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
+            this.difference.Enter += new System.EventHandler(this.answer_Enter);
             // 
             // label2
             // 
