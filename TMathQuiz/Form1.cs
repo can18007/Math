@@ -35,22 +35,15 @@ namespace TMathQuiz
 
         //This variable take actual date 
         DateTime today = DateTime.Today;
-        public void main()
-        {
-            
-        }
 
-            public void StartTheQuiz()
-        {
-            //date in label
-            
 
+        public void StartTheQuiz()
+        {
             // Fill in the addition problem.
             // Generate two random numbers to add.
             // Store the values in the variables 'addend1' and 'addend2'.
             addend1 = randomizer.Next(51);
             addend2 = randomizer.Next(51);
-
 
             // Convert the two randomly generated numbers
             // into strings so that they can be displayed
